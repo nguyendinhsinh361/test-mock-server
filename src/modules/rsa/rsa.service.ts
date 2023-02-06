@@ -55,7 +55,7 @@ export class RSAService {
 
   deleteAssistance(assistanceId: string) {
     const allRSAs = JSON.parse(
-      fs.readFileSync('./src/modules/rsa/mock-data/rsa-res.json', 'utf-8'),
+      fs.readFileSync('./src/modules/rsa/mock-data/rsa.json', 'utf-8'),
     ) as RSADto[];
     const allRSAsUpdate = allRSAs.filter(
       (ele) => ele.roadsideAssistance.id !== assistanceId,

@@ -13,8 +13,8 @@ export class RSAController {
     return `Hello ${name} Async`;
   }
 
-  @MessagePattern({ cmd: 'find-providers' })
-  // @Get('/providers')
+  // @MessagePattern({ cmd: 'find-providers' })
+  @Get('/providers')
   getProviders(@Query() query: any) {
     return this.rSAService.getProviders(query);
   }
@@ -25,12 +25,16 @@ export class RSAController {
   }
 
   @Post('/providers/:providerId/roadside-assistance')
-  createProvider(@Param() providerId: string, @Body() rSADto: RSADto) {
+  createProvider(
+    @Param('providerId') providerId: string,
+    @Body() rSADto: RSADto,
+  ) {
+    console.log(JSON.stringify(providerId), rSADto);
     return this.rSAService.createProvider(providerId, rSADto);
   }
 
   @Get('/roadside-assistances/:assistanceId')
-  getAssistance(@Param('id') assistanceId: string) {
+  getAssistance(@Param('assistanceId') assistanceId: string) {
     return this.rSAService.getAssistance(assistanceId);
   }
 
