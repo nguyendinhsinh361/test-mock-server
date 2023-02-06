@@ -1,0 +1,98 @@
+[
+  {
+    "roadsideAssistance": {
+      "id": "2a3b0e96-f02d-499f-aec4-3fe0ad18c406",
+      "roadsideAssistanceRequest": {
+        "membership": {
+          "membershipId": "12387129",
+          "firstName": "John",
+          "lastName": "Buchanan",
+          "roadsideProductId": "Hyundai Standard - iMax, iLoad, i30, i20, Getz,Elantra, Accent, Corporate",
+          "nap": {
+            "schemeCode": "HYD",
+            "expiryTimestamp": "2008-09-15T15:53:00.123+05:00",
+            "clubPlan": "5YR EXT"
+          },
+          "contact": {
+            "phone": "1800 1234 5678"
+          }
+        },
+        "vehicle": {
+          "vin": "ZHWGU22T78LA07005",
+          "make": "Lamborghini",
+          "model": "Diablo",
+          "series": "racing",
+          "body": "convertible",
+          "colour": "yellow",
+          "fuelType": "gasoline",
+          "transmissionType": "Automatic",
+          "buildYear": 1999,
+          "registrationDate": "2008-09-15",
+          "registration": "LAMBO-01",
+          "registrationState": "VIC",
+          "odometer": 84000,
+          "batteryVoltage": 12.22,
+          "clubAssistBatteryPart": "2544T",
+          "location": {
+            "latitude": -33.5915,
+            "longitude": 151.3247,
+            "hdop": 5.3,
+            "heading": 78,
+            "velocity": 62,
+            "locationTimestamp": "2008-09-15T15:53:00.123+05:00",
+            "comment": "Vehicle is parked in the garage, and not visible from the street. Call member on +61 499 999 999 for access."
+          }
+        },
+        "policyOwner": {
+          "jobNumber": "AV0307371"
+        },
+        "triageAnswers": {
+          "SAFE_LOCATION": [true],
+          "BATTERY_FAILURE": [false],
+          "VEHICLE_MOVEMENT": ["TYRE_FLAT", "NO_MOVEMENT"]
+        },
+        "comments": [
+          "An array of comments.",
+          "To be added to the RSA event in iCad.",
+          "Support maximum of five (5) comments.",
+          "With a maximum length of 240 characters each.",
+          "The fifth (5th) comment."
+        ],
+        "channel": "BudgetCarRentalRSAApplicationAndroid"
+      },
+      "provider": {
+        "id": "261a67cf-de6d-4bed-ad3e-86585bf26ab2",
+        "name": "RACV",
+        "description": "Royal Automobile Club Victora",
+        "contact": {
+          "phone": "1800 1234 5678"
+        }
+      },
+      "policyOwner": {
+        "id": "261a67cf-de6d-4bed-ad3e-86585bf26ab2",
+        "name": "RACV",
+        "description": "Royal Automobile Club Victora",
+        "contact": {
+          "phone": "1800 1234 5678"
+        }
+      }
+    },
+    "roadsideAssistanceStatus": {
+      "estimatedArrivalTimestamp": "2008-09-15T15:53:00.123+05:00",
+      "statusUpdateTimestamp": "2008-09-15T15:53:00.123+05:00",
+      "state": {
+        "type": "JOB_DISPATCHED",
+        "name": "Dispatched"
+      },
+      "location": {
+        "latitude": -33.5915,
+        "longitude": 151.3247,
+        "hdop": 5.3,
+        "heading": 78,
+        "velocity": 62,
+        "locationTimestamp": "2008-09-15T15:53:00.123+05:00",
+        "comment": "Vehicle is parked in the garage, and not visible from the street.Call member on +61 499 999 999 for access."
+      }
+    }
+  }
+]

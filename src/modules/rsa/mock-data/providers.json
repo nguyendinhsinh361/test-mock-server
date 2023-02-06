@@ -1,0 +1,17 @@
+[
+  {
+    "provider": {
+      "id": "261a67cf-de6d-4bed-ad3e-86585bf26ab2",
+      "name": "RACV",
+      "description": "Royal Automobile Club Victora",
+      "contact": {
+        "phone": "1800 1234 5678"
+      }
+    },
+    "healthcheck": {
+      "result": "SEMI-FUNCTIONAL",
+      "resultDescription": "Dispatch systems available, non CBD services have some delays",
+      "lastChecked": "2008-09-15T15:53:00.123+05:00"
+    }
+  }
+]

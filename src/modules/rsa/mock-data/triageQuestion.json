@@ -1,0 +1,23 @@
+[
+  {
+    "initialQuestionId": "SAFE_LOCATION",
+    "triageQuestions": [
+      {
+        "id": "SAFE_LOCATION",
+        "question": "Are you in a safe location?",
+        "multipleChoice": false,
+        "answers": [
+          {
+            "id": true,
+            "answer": "Yes",
+            "nextQuestionId": "BATTERY_FAILURE"
+          },
+          {
+            "id": false,
+            "answer": "No"
+          }
+        ]
+      }
+    ]
+  }
+]
