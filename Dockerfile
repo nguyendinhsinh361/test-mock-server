@@ -13,5 +13,7 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
+RUN npm run build
+
 # Specify the command to run when the container starts
-CMD ["npm", "start"]
+ENTRYPOINT  ["npm", "run", "start:prod"]
