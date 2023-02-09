@@ -1,6 +1,7 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { Body, Delete, Post } from '@nestjs/common/decorators';
 import { MessagePattern } from '@nestjs/microservices';
+import { PatrolDto } from './dto/patrol-base.dto';
 import { ProviderDto, RSADto } from './dto/rsa-base.dto';
 import { RSAService } from './rsa.service';
 
@@ -27,10 +28,9 @@ export class RSAController {
   @Post('/providers/:providerId/roadside-assistance')
   createProvider(
     @Param('providerId') providerId: string,
-    @Body() rSADto: RSADto,
+    @Body() patrolDto: PatrolDto,
   ) {
-    console.log(JSON.stringify(providerId), rSADto);
-    return this.rSAService.createProvider(providerId, rSADto);
+    return this.rSAService.createProvider(providerId, patrolDto);
   }
 
   @Get('/roadside-assistances/:assistanceId')
