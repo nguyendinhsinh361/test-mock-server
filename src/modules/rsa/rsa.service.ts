@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
+import { PatrolDto } from './dto/patrol-base.dto';
 import { ProviderDto, RSADto, TriageQuestionDto } from './dto/rsa-base.dto';
 
 @Injectable()
@@ -33,13 +34,11 @@ export class RSAService {
     return triageQuestionFromProvider;
   }
 
-  createProvider(providerId: string, rSADto: RSADto) {
+  createProvider(providerId: string, patrolDto: PatrolDto) {
     const allRSAs = JSON.parse(
       fs.readFileSync('./src/modules/rsa/mock-data/rsa.json', 'utf-8'),
     ) as RSADto[];
-    const findRSA = allRSAs.find(
-      (ele) => ele.roadsideAssistance.id === providerId,
-    );
+    const findRSA = allRSAs[0];
     return findRSA;
   }
 
