@@ -38,7 +38,15 @@ export class RSAService {
     const allRSAs = JSON.parse(
       fs.readFileSync('./src/modules/rsa/mock-data/rsa.json', 'utf-8'),
     ) as RSADto[];
-    const findRSA = allRSAs[0];
+
+    const allAddress = JSON.parse(
+      fs.readFileSync('./src/modules/rsa/mock-data/address.json', 'utf-8'),
+    ) as any[];
+    let findRSA = allRSAs[0];
+    let addressRandom = allAddress[allAddress.length * Math.random() | 0]
+    console.log(13131)
+    findRSA.roadsideAssistanceStatus.location.latitude = addressRandom.latitude;
+    findRSA.roadsideAssistanceStatus.location.longtitude = addressRandom.longtitude;
     return findRSA;
   }
 
