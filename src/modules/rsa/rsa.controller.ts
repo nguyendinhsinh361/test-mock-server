@@ -2,7 +2,6 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import { Body, Delete, Post } from '@nestjs/common/decorators';
 import { MessagePattern } from '@nestjs/microservices';
 import { PatrolDto } from './dto/patrol-base.dto';
-import { ProviderDto, RSADto } from './dto/rsa-base.dto';
 import { RSAService } from './rsa.service';
 
 @Controller('api')
